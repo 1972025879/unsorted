@@ -1,10 +1,14 @@
 # 修改默认pip为清华镜像
 ```bash
+##永久
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip config set install.trusted-host pypi.tuna.tsinghua.edu.cn
 
 # 验证配置
 pip config list
+
+##一次性 
+pip install <库名> -i https://pypi.tuna.tsinghua.edu.cn/simple #清华url
 ```
 
 # 设置环境变量
@@ -26,4 +30,8 @@ echo $DEEPSEEK_API_KEY
 按 Enter 确认文件名
 按 Ctrl + X 退出编辑器
 
+```
+# 导入环境到requirements.txt
+```bash
+pip freeze > requirement.txt #导入环境
 ```

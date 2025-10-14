@@ -75,7 +75,7 @@ git branch -M <新分支名>      # 重命名当前分支
 ```bash
 git remote add origin <远程地址>        # 添加远程仓库 origin是远程仓库的别名
 git remote -v                         # 查看远程仓库
-git remote set-url origin <新地址>      # 设置远程仓库地址
+git remote set-url origin <新地址>      # 更新远程仓库地址
 ```
 
 ## 同步操作
